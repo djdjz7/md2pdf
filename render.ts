@@ -2,7 +2,6 @@ import puppeteer from 'puppeteer'
 import { createServer } from 'vite'
 import viteConfig from './vite.config'
 import pc from 'picocolors'
-import PDFDocument from 'pdfkit'
 
 console.log(pc.bold(pc.bgGreen('Simple Markdown Renderer')))
 console.log(pc.green('Starting Vite server...'))
@@ -33,7 +32,7 @@ await page.goto(host, {
   waitUntil: 'load',
 })
 await page.evaluate('document.mermaid.run()')
-const pdfData = await page.pdf({
+await page.pdf({
   printBackground: true,
   format: 'A4',
   margin: { top: '10mm', right: '10mm', bottom: '10mm', left: '10mm' },

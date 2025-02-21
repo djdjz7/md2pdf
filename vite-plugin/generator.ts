@@ -1,4 +1,3 @@
-import MarkdownIt from 'markdown-it'
 import { Plugin } from 'vite'
 import mdit from './markdown'
 
