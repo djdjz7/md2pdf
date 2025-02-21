@@ -17,5 +17,5 @@ pre.shiki {
 
 .shiki .line > * {
   position: relative;
-  font-style: normal !important;
+  font-style: normal !important; /* override italic */
 }

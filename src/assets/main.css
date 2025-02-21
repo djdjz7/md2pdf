@@ -13,12 +13,6 @@ a {
   color: rgb(59 130 246 / var(--un-text-opacity)) /* #3b82f6 */;
   text-underline-offset: 4px;
 }
-@media (prefers-color-scheme: dark) {
-  a {
-    --un-text-opacity: 1;
-    color: rgb(147 197 253 / var(--un-text-opacity)) /* #93c5fd */;
-  }
-}
 
 p {
   line-height: 1.625;
@@ -34,12 +28,6 @@ table {
   border-top-style: solid;
   border-bottom-style: solid;
 }
-@media (prefers-color-scheme: dark) {
-  table {
-    --un-border-opacity: 1;
-    border-color: rgb(60 60 60 / var(--un-border-opacity));
-  }
-}
 
 tr,
 th,
@@ -52,24 +40,10 @@ td {
   border-bottom-style: solid;
   padding: 1rem;
 }
-@media (prefers-color-scheme: dark) {
-  tr,
-  th,
-  td {
-    --un-border-opacity: 1;
-    border-color: rgb(60 60 60 / var(--un-border-opacity));
-  }
-}
 
 td {
   --un-bg-opacity: 1;
   background-color: rgb(250 250 250 / var(--un-bg-opacity)) /* #fafafa */;
-}
-@media (prefers-color-scheme: dark) {
-  td {
-    --un-bg-opacity: 1;
-    background-color: rgb(34 34 34 / var(--un-bg-opacity)) /* #222222 */;
-  }
 }
 
 hr {
@@ -78,12 +52,6 @@ hr {
   --un-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--un-border-opacity));
   border-style: solid;
-}
-@media (prefers-color-scheme: dark) {
-  hr {
-    --un-border-opacity: 1;
-    border-color: rgb(60 60 60 / var(--un-border-opacity));
-  }
 }
 
 blockquote {
@@ -96,14 +64,6 @@ blockquote {
   border-left-style: solid;
   --un-text-opacity: 1;
   color: rgb(107 114 128 / var(--un-text-opacity)) /* #6b7280 */;
-}
-@media (prefers-color-scheme: dark) {
-  blockquote {
-    --un-border-opacity: 1;
-    border-color: rgb(60 60 60 / var(--un-border-opacity));
-    --un-text-opacity: 1;
-    color: rgb(163 163 163 / var(--un-text-opacity)) /* #a3a3a3 */;
-  }
 }
 
 img {
