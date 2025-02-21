@@ -71,3 +71,7 @@ img {
   height: auto;
   object-fit: contain;
 }
+
+code {
+  font-family: 'Fira Code VF';
+}

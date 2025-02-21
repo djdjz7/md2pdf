@@ -34,7 +34,7 @@ await page.goto(host, {
 await page.evaluate('document.mermaid.run()')
 await page.pdf({
   printBackground: true,
-  format: 'A4',
+  format: 'A3',
   margin: { top: '10mm', right: '10mm', bottom: '10mm', left: '10mm' },
   path: 'output.pdf',
 })
