@@ -13,9 +13,10 @@ As a bonus, also supports [Mermaid](https://mermaid.js.org/).
 ## Quick Start
 
 1. Install [Bun](https://bun.sh)
-2. Place markdown file in `{PROJECT ROOT}/md` directory, rename the file to `src.md`
-3. Run `bun render`
-4. You may also check the render result while you write with `bun dev`
+2. Install dependencies with `bun install`
+3. Place markdown file in `{PROJECT ROOT}/md` directory, rename the file to `src.md`
+4. Run `bun render`
+5. You may also check the render result while you write with `bun dev`
 
 ## Project Structure
 
