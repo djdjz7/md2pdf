@@ -1,5 +1,5 @@
 import { Plugin } from 'vite'
-import mdit from './markdown'
+import mdit from '../markdown'
 
 const preReplaceRe = /(<pre(?:(?!v-pre)[\s\S])*?)>/gm
 

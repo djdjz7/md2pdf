@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "render": "bun render.ts",
+    "wkrender": "bun wkrender.ts",
     "type-check": "vue-tsc --build",
     "lint:oxlint": "oxlint . --fix -D correctness --ignore-path .gitignore",
     "lint:eslint": "eslint . --fix",

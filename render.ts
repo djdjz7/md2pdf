@@ -43,3 +43,5 @@ console.log(pc.green('PDF saved to ') + pc.underline(pc.cyan('output.pdf')))
 
 console.log(pc.green('Cleaning up...'))
 Promise.all([browser.close(), viteServer.close()])
+
+console.log(pc.green('Done!'))
