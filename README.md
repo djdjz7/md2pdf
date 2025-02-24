@@ -1,5 +1,7 @@
 # md2pdf
 
+![Preview](./preview.png)
+
 My tool for rendering markdown files to pdf.
 
 Style centered, instead of performance. Hopes to be pixel-perfect.

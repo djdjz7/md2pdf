@@ -12,6 +12,14 @@ function ContentGeneratorPlugin(): Plugin {
         return `<template>${rendered.replace(preReplaceRe, '$1 v-pre>')}</template>`
       }
     },
+    handleHotUpdate({ file, server }) {
+      if (file.endsWith('.md')) {
+        const modules = server.moduleGraph.getModulesByFile(file) ?? []
+        for (const mod of modules) {
+          server.reloadModule(mod)
+        }
+      }
+    },
   }
 }
 

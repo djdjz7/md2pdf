@@ -1,6 +1,7 @@
 import MarkdownIt from 'markdown-it'
 import { createHighlighter } from 'shiki'
 import MathJax3 from 'markdown-it-mathjax3'
+import MarkdownItAnchor from 'markdown-it-anchor'
 
 const highlighter = await createHighlighter({
   themes: ['catppuccin-latte'],
@@ -21,6 +22,8 @@ const mdit = new MarkdownIt({
     })
     return result
   },
-}).use(MathJax3)
+})
+  .use(MathJax3)
+  .use(MarkdownItAnchor)
 
 export default mdit
